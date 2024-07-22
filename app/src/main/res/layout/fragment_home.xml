@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+
+            android:id="@+id/img_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/img_avatar">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/text_color"
+                android:text="Hello!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="Nguyễn Mạnh Hà"
+                android:layout_gravity="end"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_rectangle"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+</LinearLayout>
