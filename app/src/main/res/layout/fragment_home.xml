@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
     <RelativeLayout
@@ -22,28 +22,31 @@
             android:scaleType="centerCrop"
 
             app:shapeAppearanceOverlay="@style/roundedImageView" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_marginLeft="20dp"
-            android:layout_toEndOf="@+id/img_avatar">
+            android:layout_toEndOf="@+id/img_avatar"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_gravity="top"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:text="Hello!"
                 android:textColor="@color/text_color"
-                android:text="Hello!"/>
+                android:textSize="20dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:text="Nguyễn Mạnh Hà"
                 android:layout_gravity="end"
+                android:text="Nguyễn Mạnh Hà"
                 android:textColor="@color/text_color"
-                android:textStyle="bold"/>
+                android:textSize="25dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </RelativeLayout>
@@ -55,5 +58,7 @@
         android:background="@drawable/custom_rectangle"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="137dp" />
+
+
 
 </LinearLayout>
