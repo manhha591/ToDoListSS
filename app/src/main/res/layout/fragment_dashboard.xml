@@ -4,10 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <com.labstyle.darioweekviewdatepicker.DarioWeekViewDatePicker
         android:id="@+id/datePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <com.ramijemli.percentagechartview.PercentageChartView
+        android:id="@+id/view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pcv_mode="pie"
+        app:pcv_orientation="counter_clockwise"
+        app:pcv_animDuration="800"
+        app:pcv_animInterpolator="anticipate_overshoot"
+        app:pcv_progress="10"
+        app:pcv_startAngle="90"/>
 </LinearLayout>

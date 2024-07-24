@@ -1,5 +1,7 @@
 package com.example.todolistss.ui.dashboard;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +35,14 @@ public class DashboardFragment extends Fragment {
        Toast.makeText(getContext(),binding.datePicker.getOnSelectionChanged().toString(),Toast.LENGTH_SHORT).show();
 //        final TextView textView = binding.textDashboard;
 //        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        binding.viewId.textColor(Color.BLACK)
+                .textSize(14f)
+                .typeface(Typeface.DEFAULT)
+                .textShadow(Color.WHITE, 2f, 2f, 2f)
+                .progressColor(Color.RED)
+                .backgroundColor(Color.BLACK)
+                .apply();
         return root;
     }
 
