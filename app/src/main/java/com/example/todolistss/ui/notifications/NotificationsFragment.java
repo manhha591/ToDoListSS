@@ -25,7 +25,7 @@ public class NotificationsFragment extends Fragment {
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        binding.progressBar.setProgress(50);
+       // binding.progressBar.setProgress(50);
         return root;
     }
 

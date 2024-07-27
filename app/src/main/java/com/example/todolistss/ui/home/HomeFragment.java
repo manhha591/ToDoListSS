@@ -32,9 +32,9 @@ public class HomeFragment extends Fragment {
         binding.imgAvatar.setOnClickListener(view -> {
             //startActivity(new Intent(getActivity(), SecondActivity.class));
 
-            NavController navController = Navigation.findNavController(view);
-            navController.popBackStack();
-            navController.navigate(R.id.navigation_dashboard);
+//            NavController navController = Navigation.findNavController(view);
+//            navController.popBackStack();
+//            navController.navigate(R.id.navigation_dashboard);
         });
 //        final TextView textView = binding.textHome;
 //        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);

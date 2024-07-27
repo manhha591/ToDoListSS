@@ -49,5 +49,7 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.github.myDario:DarioWeekViewDatePicker:1.0.3")
-    implementation ("com.ramijemli.percentagechartview:percentagechartview:0.3.1")
+    //implementation ("com.ramijemli.percentagechartview:percentagechartview:0.3.1")
+    implementation ("androidx.fragment:fragment-ktx:1.3.6")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
 }

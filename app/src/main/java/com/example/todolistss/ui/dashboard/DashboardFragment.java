@@ -36,13 +36,7 @@ public class DashboardFragment extends Fragment {
 //        final TextView textView = binding.textDashboard;
 //        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        binding.viewId.textColor(Color.BLACK)
-                .textSize(14f)
-                .typeface(Typeface.DEFAULT)
-                .textShadow(Color.WHITE, 2f, 2f, 2f)
-                .progressColor(Color.RED)
-                .backgroundColor(Color.BLACK)
-                .apply();
+
         return root;
     }
 
